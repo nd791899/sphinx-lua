@@ -1,0 +1,33 @@
+sphinx lua client
+使用lua连接sphinx的服务端，提交搜索请求。
+这个版本还有很多东西都是测试的，没有错误的处理。
+下一个版本是集成的ngx_lua上
+
+测试的数据：
+1	qq音乐	据国外媒体报道，谷歌将巨资收购百度，	2010-04-01 22:20:07	1	2
+2	qq	4月1日消息，	2010-04-01 23:25:48	1	3
+3	死都要上！Opera Mini 体验版抢先试用	Opera	2010-04-01 12:01:00	2	3
+
+
+测试的结果
+Query 'qq' retrieved 2 of 2 matches.
+
+Query stats:
+
+        'qq' found 2 times in 2 documents
+
+
+Matches:
+
+
+
+1. doc_id=2, weight=499999
+attrs:
+group_id        3
+date_added      1270135548
+
+
+2. doc_id=1, weight=499998
+attrs:
+group_id        2
+date_added      1270131607
