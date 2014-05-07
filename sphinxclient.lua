@@ -1,4 +1,4 @@
--- sphinxclient.lua
+-- Copyright (C) 2014 nd791899 191076013@qq.com
 
 require("bit")
 local socket = require("socket")
